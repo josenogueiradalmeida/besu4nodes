@@ -1,0 +1,33 @@
+# Valid TOML config file
+data-path="data" # Path
+ 
+host-whitelist=["*"] 
+#accounts-whitelist=["0xfe3b557e8fb62b89f4916b721be55ceb828dbd73", "0x627306090abaB3A6e1400e9345bC60c78a8BEf57"]
+#nodes-whitelist=[]
+
+# Network
+bootnodes=["enode://f383ff634086cdebadcb8891c31df307511adcdcb472ac221e45ed1d63dbd388cba76c24ad929b6e3820d8ed7781cc694953b9d569f1cc854095e35198f6c14e@127.0.0.1:30303"]
+
+#p2p-host="1.2.3.4"
+#max-peers=42
+p2p-port=30305
+
+#free gas network (zero cost for transactions)
+#min-gas-price=0 
+
+#rpc-http-host="5.6.7.8"
+#rpc-http-port=5678
+#rpc-ws-host="9.10.11.12"
+#rpc-ws-port=9101
+
+rpc-http-cors-origins=["all"]
+rpc-http-port=8547
+rpc-http-enabled=true
+rpc-http-api=["ETH","NET","IBFT"] 
+
+# Chain
+genesis-file="../genesis.json" # Path to the custom genesis file
+
+# Mining
+miner-enabled=true
+miner-coinbase="0xe071b3b400d61bEb313a9F9e4128a5eFCBd22984"
