@@ -9,7 +9,7 @@ for /l %%x in (1, 1, 4) do  (
     del /Q /S DATABASE_METADATA.json
     del /Q /S uploads
     cd ..
-    start besu --config-file=configNode.toml
+    start "NODE%%x" besu --config-file=configNode.toml
     cd ..
     pause
 )
