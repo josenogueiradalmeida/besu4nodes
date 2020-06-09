@@ -4,21 +4,17 @@ MAINTAINER SuporteInfraAplicacoes <suporte-infra-aplicacoes@bndes.gov.br>
 # Corrigir timezone
 RUN ln -snf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 
-ADD ./node1/configNode.toml ./conf/node/configNode.toml
+ADD ./node1/configNode.toml /conf/local/configNode.toml
 
-ADD ./genesis.json ./conf/genesis.json
+ADD ./genesis.json /conf/genesis.json
 
-WORKDIR ./conf/node
+RUN echo 'Configure seu arquivo TOML' > /conf/LEAIME.txt
 
-#RUN npm install
+WORKDIR /conf/local
 
 EXPOSE 8545
 
-#VOLUME ["/"]
-#VOLUME ["/backend/Back/arquivos/declaracao"]
-#VOLUME ["/backend/Back/arquivos/modelo_declaracao"]
-#VOLUME ["/backend/Back/arquivos/comprovante_doacao"]
-#VOLUME ["/backend/Back/arquivos/comprovante_liquidacao"]
+VOLUME /conf
+VOLUME /conf/local
 
-#ENTRYPOINT ["ls","-la"]
-ENTRYPOINT ["besu","--config-file=./configNode.toml"]
+ENTRYPOINT ["besu","--config-file=/conf/local/configNode.toml"]

@@ -29,5 +29,5 @@ rpc-http-api=["ETH","NET","IBFT"]
 genesis-file="../genesis.json" # Path to the custom genesis file
 
 # Mining
-miner-enabled=true
-miner-coinbase="0xe071b3b400d61bEb313a9F9e4128a5eFCBd22984"
+#miner-enabled=true
+#miner-coinbase="0xe071b3b400d61bEb313a9F9e4128a5eFCBd22984"
