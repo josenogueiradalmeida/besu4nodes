@@ -6,7 +6,7 @@ host-whitelist=["*"]
 #nodes-whitelist=[]
 
 # Network
-bootnodes=["enode://f383ff634086cdebadcb8891c31df307511adcdcb472ac221e45ed1d63dbd388cba76c24ad929b6e3820d8ed7781cc694953b9d569f1cc854095e35198f6c14e@127.0.0.1:30303"]
+bootnodes=["enode://e7d1e876c5833a8d25f7bdd061504243e0fefd22e189b161dc4bf1846849221f1de634e09afb8842fecfe29904f306c81141a2ecb903c77b0022501c8d005a76@127.0.0.1:30303"]
 
 #p2p-host="1.2.3.4"
 #max-peers=42

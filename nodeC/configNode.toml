@@ -1,0 +1,15 @@
+data-path="/conf/data" # Path
+ 
+host-whitelist=["*"] 
+
+bootnodes=["enode://f383ff634086cdebadcb8891c31df307511adcdcb472ac221e45ed1d63dbd388cba76c24ad929b6e3820d8ed7781cc694953b9d569f1cc854095e35198f6c14e@127.0.0.1:30303"]
+
+p2p-port=30309
+
+
+rpc-http-cors-origins=["all"]
+rpc-http-port=8551
+rpc-http-enabled=true
+rpc-http-api=["ETH","NET","IBFT"] 
+
+genesis-file="/conf/genesis.json" # Path to the custom genesis file

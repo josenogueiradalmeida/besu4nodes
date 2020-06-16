@@ -6,7 +6,7 @@ host-whitelist=["*"]
 #nodes-whitelist=[]
 
 # Network
-#bootnodes=["enode://f383ff634086cdebadcb8891c31df307511adcdcb472ac221e45ed1d63dbd388cba76c24ad929b6e3820d8ed7781cc694953b9d569f1cc854095e35198f6c14e@127.0.0.1:30303"]
+#bootnodes=["enode://9049da83a9512dda6c96bd65b6322ab3f732ab5c1360b55f4b975ee9cce685b21aeb97a0f21d6b22ece950b9264366389744abbf1025f8cbb75385a3b1e81763@172.17.0.2:30307"]
 
 #p2p-host="1.2.3.4"
 #max-peers=42
@@ -26,7 +26,7 @@ rpc-http-enabled=true
 rpc-http-api=["ETH","NET","IBFT"] 
 
 # Chain
-genesis-file="../genesis.json" # Path to the custom genesis file
+#genesis-file="../genesis.json" # Path to the custom genesis file
 
 # Mining
 #miner-enabled=true
