@@ -1,5 +1,6 @@
 #!/bin/bash
 #RUN ONE SPECIFIED NODE
+sudo docker pull nogueiradalmeida/rbbnode:v0.01
 echo NODE $1
 cd node$1
 cd data
